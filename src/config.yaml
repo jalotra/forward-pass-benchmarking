@@ -1,0 +1,48 @@
+# Benchmark configuration — single source of truth for both stacks.
+# Loaded by src/bench/settings.py at `modal deploy` time (never inside containers;
+# values the container needs are injected as env vars on the image).
+
+model:
+  name: Qwen/Qwen3-4B-Instruct-2507
+  revision: cdbee75f17c01a7cc42f958dc650907174af0554 # 2026-09-17 head of main
+  max_length: 8192        # cap context to keep KV cache small relative to 24GB
+
+hardware:
+  gpu: L4                 # min GPU on MAX's officially-supported list (24GB)
+  compute_region: us      # where GPU containers run
+  routing_region: us-west # where Modal proxies terminate (close to clients)
+
+server:
+  port: 8000              # OpenAI-compatible endpoint port inside the container
+  min_containers: 0       # scale to zero when idle — budget control       # scale to zero when idle — budget control
+  max_containers: 1       # pin to a single replica so benchmarks aren't multi-node
+  startup_timeout_min: 20 # first cold start: image pull + weights + compile
+  exit_grace_period_s: 15
+
+sglang:
+  image: lmsysorg/sglang:v0.5.12.post1-cu130
+  app_name: bench-sglang
+  health_path: /health
+  metrics_url: http://127.0.0.1:8000/metrics
+
+max:
+  # docker.modular.com rate-limits unauthenticated pulls → install the OSS
+  # max[serve] wheel from Modular's public nightly index on a CUDA base instead.
+  base_image: nvidia/cuda:13.0.1-devel-ubuntu24.04
+  wheel_index: https://whl.modular.com/nightly/simple/
+  package: max[serve]
+  app_name: bench-max
+  health_path: /v1/health
+  # MAX exposes Prometheus metrics on a separate port; fall back to the main
+  # port if the layout differs in the pinned image.
+  metrics_urls:
+    - http://127.0.0.1:8001/metrics
+    - http://127.0.0.1:8000/metrics
+
+volumes:
+  hf_cache: bench-hf-cache     # shared HF weights cache — both stacks, one download
+  max_cache: bench-max-cache   # MAX compiled-artifact (MEF) cache via MODULAR_HOME
+  results: bench-results       # /results — in-container metric snapshots land here
+
+telemetry:
+  interval_s: 5                # /metrics scrape cadence inside the container

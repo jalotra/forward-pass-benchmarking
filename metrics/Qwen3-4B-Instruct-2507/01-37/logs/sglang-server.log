@@ -1,0 +1,133 @@
+[2026-09-17 19:53:01] INFO:     172.20.0.1:41640 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:01] INFO:     172.20.0.1:41640 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:01] Prefill batch, #new-seq: 1, #new-token: 1, #cached-token: 17, token usage: 0.04, #running-req: 28, #queue-req: 0, #pending-token: 0, cuda graph: True, input throughput (token/s): 3.57
+[2026-09-17 19:53:01] INFO:     127.0.0.1:33761 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:01] INFO:     172.20.0.1:48760 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:02] Decode batch, #running-req: 28, #token: 3443, token usage: 0.05, cuda graph: False, gen throughput (token/s): 644.79, #queue-req: 0
+[2026-09-17 19:53:02] INFO:     172.20.0.1:33442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:02] INFO:     172.20.0.1:47828 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:02] INFO:     172.20.0.1:44750 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:02] INFO:     172.20.0.1:33048 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:03] INFO:     172.20.0.1:45752 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:03] INFO:     172.20.0.1:33018 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:03] Decode batch, #running-req: 22, #token: 3044, token usage: 0.04, cuda graph: True, gen throughput (token/s): 651.66, #queue-req: 0
+[2026-09-17 19:53:04] INFO:     172.20.0.1:51894 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:04] INFO:     172.20.0.1:42800 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:05] Decode batch, #running-req: 20, #token: 3382, token usage: 0.05, cuda graph: True, gen throughput (token/s): 538.38, #queue-req: 0
+[2026-09-17 19:53:05] INFO:     172.20.0.1:44676 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:05] INFO:     172.20.0.1:36328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:05] INFO:     172.20.0.1:33500 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:06] INFO:     172.20.0.1:42692 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:06] INFO:     172.20.0.1:42758 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:06] INFO:     172.20.0.1:52680 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:06] INFO:     172.20.0.1:43846 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:06] Decode batch, #running-req: 14, #token: 2389, token usage: 0.03, cuda graph: True, gen throughput (token/s): 454.26, #queue-req: 0
+[2026-09-17 19:53:06] INFO:     127.0.0.1:41867 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:08] INFO:     172.20.0.1:36392 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:08] Decode batch, #running-req: 13, #token: 2396, token usage: 0.03, cuda graph: True, gen throughput (token/s): 360.11, #queue-req: 0
+[2026-09-17 19:53:08] INFO:     172.20.0.1:33034 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:08] INFO:     172.20.0.1:36502 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:08] INFO:     172.20.0.1:54596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:09] INFO:     172.20.0.1:43814 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:09] INFO:     172.20.0.1:51948 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:09] INFO:     172.20.0.1:52678 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:09] INFO:     172.20.0.1:55686 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:09] INFO:     172.20.0.1:47280 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:09] Decode batch, #running-req: 4, #token: 981, token usage: 0.01, cuda graph: True, gen throughput (token/s): 270.11, #queue-req: 0
+[2026-09-17 19:53:10] INFO:     172.20.0.1:33002 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:10] INFO:     172.20.0.1:33016 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:10] INFO:     172.20.0.1:39660 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:10] INFO:     172.20.0.1:56314 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-17 19:53:11] INFO:     127.0.0.1:33933 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:16] INFO:     127.0.0.1:31962 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:21] INFO:     127.0.0.1:50125 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:22] INFO:     172.20.0.1:55878 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:26] INFO:     127.0.0.1:49485 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:31] INFO:     127.0.0.1:35870 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:35] INFO:     172.20.0.1:38600 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:36] INFO:     127.0.0.1:49748 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:37] INFO:     172.20.0.1:38600 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:41] INFO:     127.0.0.1:50230 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:46] INFO:     172.20.0.1:42298 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:46] INFO:     127.0.0.1:27714 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:51] INFO:     127.0.0.1:61555 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:56] INFO:     127.0.0.1:31318 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:53:59] INFO:     172.20.0.1:59710 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:54:01] INFO:     127.0.0.1:22090 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:54:07] INFO:     127.0.0.1:60319 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:54:08] INFO:     172.20.0.1:36888 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:54:12] INFO:     127.0.0.1:61812 - "GET /metrics HTTP/1.1" 200 OK
+[2026-09-17 19:54:17] INFO:     127.0.0.1:40544 - "GET /metrics HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/bench/telemetry.py", line 65, in <module>
+Process Process-2:
+Process Process-1:
+    sys.exit(main())
+             ^^^^^^
+  File "/root/bench/telemetry.py", line 61, in main
+    time.sleep(interval)
+KeyboardInterrupt
+telemetry: scraping ['http://127.0.0.1:8000/metrics'] every 5.0s -> /results/sglang.prom
+[2026-09-17 19:54:21] SIGTERM received. signum=None frame=None. Draining requests and shutting down...
+[modal-client] 2026-09-17T19:54:21+0000 [Modal Flash] Closing tunnel on https://ta-01m2recqvbh1bsxxtveexg282r-8000-71xm30o1xr1x98trl985e7efg.w.modal.host.
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py", line 4041, in run_scheduler_process
+    scheduler.run_event_loop()
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py", line 1534, in run_event_loop
+    dispatch_event_loop(self)
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py", line 3910, in dispatch_event_loop
+    scheduler.event_loop_overlap()
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler.py", line 1605, in event_loop_overlap
+    self.on_idle()
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler_runtime_checker_mixin.py", line 559, in on_idle
+    has_leak, messages = self._check_all_pools(self.get_pool_stats())
+                                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler_runtime_checker_mixin.py", line 184, in get_pool_stats
+    pool_stats = self._get_token_info()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/scheduler_runtime_checker_mixin.py", line 201, in _get_token_info
+    available_size = self.token_to_kv_pool_allocator.available_size()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/srt/mem_cache/allocator.py", line 146, in available_size
+    return len(self.free_pages) + len(self.release_pages)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 1187, in __len__
+    def __len__(self):
+    
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/detokenizer_manager.py", line 433, in run_detokenizer_process
+    manager.event_loop()
+  File "/sgl-workspace/sglang/python/sglang/srt/managers/detokenizer_manager.py", line 148, in event_loop
+    recv_obj = self.recv_from_scheduler.recv_pyobj()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/zmq/sugar/socket.py", line 989, in recv_pyobj
+    msg = self.recv(flags)
+          ^^^^^^^^^^^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1218, in zmq.backend.cython._zmq.Socket.recv
+    def recv(self, flags=0, copy: bint = True, track: bint = False):
+    ^^^^^^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1253, in zmq.backend.cython._zmq.Socket.recv
+    return _recv_copy(self.handle, flags)
+    ^^^^^^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 1408, in zmq.backend.cython._zmq._recv_copy
+    _check_rc(rc)
+    ^^^^^^^^^^^
+  File "zmq/backend/cython/_zmq.py", line 179, in zmq.backend.cython._zmq._check_rc
+    PyErr_CheckSignals()
+    ^^^^^^^^^^^
+KeyboardInterrupt
+[2026-09-17 19:54:21] INFO:     Shutting down

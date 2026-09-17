@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars (gitignored) and adjust.
+deploy_sglang = true
+deploy_max    = true
+
+# Only for gated models (e.g. meta-llama/*). Leave empty for Qwen3.
+# hf_token    = "hf_..."

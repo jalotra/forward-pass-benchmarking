@@ -1,0 +1,33 @@
+# k6 scenario config — rendered to -e flags by run.mjs (k6 can't read yaml).
+# Per-project rule: config lives in yaml, not CLI args.
+
+endpoint:
+  # Fill after `make urls` — or pass --env BASE_URL=... on the run command.
+  base_url: ""
+  path: /v1/chat/completions
+
+model: Qwen/Qwen3-4B-Instruct-2507
+
+request:
+  max_tokens: 256        # decode length per request — dominates run duration
+  temperature: 0.0       # deterministic-ish; engines still sample differently
+  timeout_s: 120
+
+scenarios:
+  smoke:
+    vus: 1
+    iterations: 5
+  latency:
+    # Best-case single-stream latency: 1 VU, fixed shape, enough iters for p99.
+    vus: 1
+    iterations: 50
+  sweep:
+    # Throughput knee: ramp VUs 1->2->4->8->16->32, hold each stage.
+    stage_vus: [1, 2, 4, 8, 16, 32]
+    stage_duration_s: 60
+    graceful_stop_s: 30
+  bench10m:
+    # The canonical 10-minute run: 6 x 100s ramping-VU stages = exactly 600s.
+    stage_vus: [1, 2, 4, 8, 16, 32]
+    stage_duration_s: 100
+    graceful_stop_s: 10

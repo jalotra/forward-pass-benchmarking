@@ -1,0 +1,17 @@
+{
+  "name": "bench-k6",
+  "private": true,
+  "description": "k6/TS load harness — MAX vs SGLang benchmark (runs locally)",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "smoke": "npm run build && node run.mjs smoke",
+    "latency": "npm run build && node run.mjs latency",
+    "sweep": "npm run build && node run.mjs sweep"
+  },
+  "devDependencies": {
+    "@types/k6": "^1.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0",
+    "yaml": "^2.5.0"
+  }
+}

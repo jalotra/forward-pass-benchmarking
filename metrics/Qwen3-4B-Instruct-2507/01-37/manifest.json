@@ -1,0 +1,47 @@
+{
+  "collected_at": "2026-09-18T01:37:57.369780+05:30",
+  "model": {
+    "name": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "max_length": 8192
+  },
+  "hardware": {
+    "gpu": "L4",
+    "compute_region": "us",
+    "routing_region": "us-west"
+  },
+  "server": {
+    "port": 8000,
+    "min_containers": 0,
+    "max_containers": 1,
+    "startup_timeout_min": 20,
+    "exit_grace_period_s": 15
+  },
+  "endpoints": {
+    "sglang": "https://jalotratrading--bench-sglang-sglang.us-west.modal.direct",
+    "max": "https://jalotratrading--bench-max-max.us-west.modal.direct"
+  },
+  "run_windows": {
+    "sglang": {
+      "start": "2026-09-18T01:13:01+0530",
+      "end": "2026-09-18T01:23:11+0530"
+    },
+    "max": {
+      "start": "2026-09-18T01:27:14+0530",
+      "end": "2026-09-18T01:37:25+0530"
+    }
+  },
+  "scenario": "bench10m \u2014 ramping-vus [1,2,4,8,16,32] x 100s = 600s",
+  "request_shape": {
+    "max_tokens": 256,
+    "temperature": 0.0,
+    "endpoint": "/v1/chat/completions"
+  },
+  "units_note": "sglang *_seconds metrics -> ms on analysis (x1000); maxserve_*_milliseconds already ms; k6 values ms. All plots/tables in ms.",
+  "files": {
+    "sglang.prom": "timestamped /metrics snapshots (TTFT/TPOT/latency histograms, cumulative)",
+    "max.prom": "timestamped :8001 /metrics snapshots (maxserve_* histograms, cumulative)",
+    "k6/": "k6 --summary-export JSON + *.ndjson per-request points (status,timing)",
+    "logs/": "engine server logs (decode throughput, batching, errors)"
+  }
+}

@@ -1,0 +1,5 @@
+# Local deploy-time tooling for src/ (the Modal CLI + config loader).
+# Containers get their deps from their own images — nothing here ships remotely.
+modal>=1.5.5
+pyyaml>=6.0
+requests>=2.31

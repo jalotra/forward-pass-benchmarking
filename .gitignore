@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / k6 bundling
+node_modules/
+k6/dist/
+
+# Infra
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+crash.log
+
+# Benchmark output
+results/
+reports/
+
+# Vendored MAX source (re-clone via sparse checkout; ~250MB)
+third_party/
+
+# Secrets
+.env
+*.pem
