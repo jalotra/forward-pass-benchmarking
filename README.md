@@ -41,8 +41,6 @@ Individual panels in `[metrics/Qwen3-4B-Instruct-2507/01-37/plots/](metrics/Qwen
 | [e2e_ms_cdf.png](metrics/Qwen3-4B-Instruct-2507/01-37/plots/e2e_ms_cdf.png)   |                                                                                             |                                                                                                                                                                                                                       |
 
 
-Tables: `[tables/summary.csv](metrics/Qwen3-4B-Instruct-2507/01-37/tables/summary.csv)` · `[tables/e2e_per_stage.csv](metrics/Qwen3-4B-Instruct-2507/01-37/tables/e2e_per_stage.csv)` — raw data: `sglang.prom`, `max.prom`, `k6/*.ndjson`, `logs/`, `manifest.json` in the same dir.
-
 ## Repo map
 
 ```
